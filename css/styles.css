@@ -1,0 +1,372 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #009987;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #951C49;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/logo-moto-large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { 
+  font-family: 'Lora', serif;
+  color: #ffffff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-bottom: 0;
+  margin-left: 10px;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 50px;
+}
+#nav-list a {
+  color: #000000;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+#nav-list.dropdown-menu.visible-xs {
+  width: 100% ;
+  text-align: center;
+  box-shadow: none;
+  background-color: #00b0b6;
+  }
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#about-site {
+  font-style: italic;
+}
+/* END FOOTER */
+
+/* HOME PAGE */
+.container .carousel {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #ffffff;
+  margin: 30px 0 30px 0;
+}
+#trabalhos-tile, #about-me-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#trabalhos-tile:hover, #about-me-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#trabalhos-tile {
+  background: url('../images/trabalhos-tile.jpg') no-repeat;
+  background-position: center;
+}
+#about-me-tile {
+  background: url('../images/about-me-tile.jpg') no-repeat;
+  background-position: center;
+}
+#trabalhos-tile span, #about-me-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+/* END HOME PAGE */
+
+/* TRABALHOS PAGE */
+.trabalhos-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.trabalhos-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.trabalhos-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#trabalhos-title + div {
+  margin-bottom: 50px;
+}
+/* END TRABALHOS PAGE */
+
+/* ABOUT ME PAGE */
+.trabalho-tile {
+  margin-bottom: 25px;
+}
+.trabalho-tile hr {
+  width: 80%;
+}
+.trabalho-tile .trabalho-date {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.trabalho-tile .trabalho-date span {
+  font-size: .6em;
+}
+.trabalho-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.trabalho-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.trabalho-description {
+  padding-right: 30px;
+}
+h3.trabalho-title {
+  margin: 0 0 10px;
+}
+.trabalho-details {
+  font-size: .9em;
+  font-style: italic;
+}
+.about-me-text {
+  text-indent: 35px;
+}
+.about-me-text > .about-me-text-heading {
+  text-indent: 0;
+}
+h4 {
+  color: #000000;
+}
+#carousel-example-generic {
+  background-color: #ffffff;
+}
+.carousel-inner > .item > img {
+  margin: 0 auto;    
+  height: 100%;
+}
+
+/* END ABOUT ME PAGE */
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .carousel-inner > .item > img {
+    margin: 0 auto;
+    height: 675px;
+  }
+  .navbar-brand h1 {
+  margin-top: 50px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/logo-moto-medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  .navbar-brand h1 {
+  margin-top: 25px;
+  }
+  #nav-list {
+  margin-top: 25px;
+}
+  /* End Header */
+
+  /* Home Page */
+  .carousel-inner > .item > img {
+    margin: 0 auto;
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  #nav-list {
+  margin-top: 10px;
+  }
+  .carousel-inner > .item > img {
+    margin: 0 auto;
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p {
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img {
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+  .container .carousel {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #trabalhos-tile, #about-me-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  .trabalho-photo {
+    margin-right: auto;
+  }
+  .trabalho-tile .trabalho-date {
+    text-align: center;
+  }
+  .trabalho-description {
+    text-align: center;;
+  }
+  #nav-list {
+  margin-top: 10px;
+  }
+  .carousel-inner > .item > img {
+      margin: 0 auto;
+      height: 400px;
+  }
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 {
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #trabalhos-tile, #about-me-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+
+
+
