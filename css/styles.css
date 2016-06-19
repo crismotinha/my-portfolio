@@ -1,13 +1,14 @@
+
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #009987;
+  background-color: #87ceeb;
   font-family: 'Oxygen', sans-serif;
 }
 
 /** HEADER **/
 #header-nav {
-  background-color: #951C49;
+  background-color: #222;
   border-radius: 0;
   border: 0;
 }
@@ -22,7 +23,7 @@ body {
 .navbar-brand {
   padding-top: 25px;
 }
-.navbar-brand h1 { 
+.navbar-brand h1 { /* Cris Motinha */
   font-family: 'Lora', serif;
   color: #ffffff;
   font-size: 1.5em;
@@ -40,28 +41,26 @@ body {
   margin-top: 50px;
 }
 #nav-list a {
-  color: #000000;
+  color: #ffffff;
   text-align: center;
 }
 #nav-list a:hover {
-  background: #E7E7E7;
+  background: #009987;
 }
 #nav-list a span {
   font-size: 1.8em;
 }
+
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  background-color: #ffffff;
+  border: 1px solid #3b3561;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: -30px;
+  margin-top: -35px;
+  margin-bottom: 30px;
 }
-#nav-list.dropdown-menu.visible-xs {
-  width: 100% ;
-  text-align: center;
-  box-shadow: none;
-  background-color: #00b0b6;
-  }
+
 /* END HEADER */
 
 /* FOOTER */
@@ -75,17 +74,13 @@ body {
 .panel-footer div.row {
   margin-bottom: 35px;
 }
-#hours, #address {
+#contact {
   line-height: 2;
 }
-#hours > span, #address > span {
+#contact > h5 {
   font-size: 1.3em;
 }
-#address p {
-  color: #557c3e;
-  font-size: .8em;
-  line-height: 1.8;
-}
+
 #about-site {
   font-style: italic;
 }
@@ -128,9 +123,14 @@ body {
   color: #fff;
   opacity: .8;
 }
+#main-content {
+  background-color: #011f4b;
+}
 /* END HOME PAGE */
 
 /* TRABALHOS PAGE */
+
+
 .trabalhos-tile { 
   position: relative;
   border: 2px solid #3F0C1F;
@@ -242,13 +242,14 @@ h4 {
     background: url('../images/logo-moto-medium.png') no-repeat;
     width: 100px;
     height: 100px;
-    margin: 5px 5px 5px 0;
+    margin: 15px 5px 5px 0;
   }
   .navbar-brand h1 {
-  margin-top: 25px;
+  margin-top: 30px;
   }
   #nav-list {
   margin-top: 25px;
+  margin-bottom: 25px;
 }
   /* End Header */
 
@@ -262,9 +263,18 @@ h4 {
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/logo-moto-medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+
   /* Home Page */
   #nav-list {
-  margin-top: 10px;
+    margin-top: 10px;
   }
   .carousel-inner > .item > img {
     margin: 0 auto;
@@ -281,17 +291,10 @@ h4 {
     height: 80px;
   }
   .navbar-brand h1 {
-    padding-top: 10px;
+    padding-top: 20px;
     font-size: 5vw; /* 1vw = 1% of viewport width */
   }
-  .navbar-brand p {
-    font-size: .6em;
-    margin-top: 12px;
-  }
-  .navbar-brand p img {
-    height: 20px;
-  }
-
+  
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
   }
