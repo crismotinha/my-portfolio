@@ -10,3 +10,4 @@ Edge (v 25.1) e Opera (v.38), apresentando o mesmo comportamento nos três naveg
 
 Os 3 arquivos html foram testados no validator.w3.org, não apresentando nenhum erro ou alerta.
 
+OBS: A logo foi baseada num design Freepik (http://www.freepik.com/free-vector/vintage-motorcycle_713024.htm)
